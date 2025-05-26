@@ -1,5 +1,13 @@
 package io.virtualapp.home;
 
+import static androidx.recyclerview.widget.ItemTouchHelper.ACTION_STATE_DRAG;
+import static androidx.recyclerview.widget.ItemTouchHelper.DOWN;
+import static androidx.recyclerview.widget.ItemTouchHelper.END;
+import static androidx.recyclerview.widget.ItemTouchHelper.LEFT;
+import static androidx.recyclerview.widget.ItemTouchHelper.RIGHT;
+import static androidx.recyclerview.widget.ItemTouchHelper.START;
+import static androidx.recyclerview.widget.ItemTouchHelper.UP;
+
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
@@ -10,19 +18,20 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.OrientationHelper;
-import android.support.v7.widget.PopupMenu;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.OrientationHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.lody.virtual.GmsSupport;
 import com.lody.virtual.client.stub.ChooseTypeAndAccountActivity;
@@ -49,13 +58,6 @@ import io.virtualapp.home.models.MultiplePackageAppData;
 import io.virtualapp.home.models.PackageAppData;
 import io.virtualapp.widgets.TwoGearsView;
 
-import static android.support.v7.widget.helper.ItemTouchHelper.ACTION_STATE_DRAG;
-import static android.support.v7.widget.helper.ItemTouchHelper.DOWN;
-import static android.support.v7.widget.helper.ItemTouchHelper.END;
-import static android.support.v7.widget.helper.ItemTouchHelper.LEFT;
-import static android.support.v7.widget.helper.ItemTouchHelper.RIGHT;
-import static android.support.v7.widget.helper.ItemTouchHelper.START;
-import static android.support.v7.widget.helper.ItemTouchHelper.UP;
 
 /**
  * @author Lody

@@ -2,10 +2,11 @@ package io.virtualapp.abs.percent;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.percent.PercentLayoutHelper;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import androidx.percentlayout.widget.PercentLayoutHelper;
 
 /**
  * @author Lody

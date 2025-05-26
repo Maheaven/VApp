@@ -11,7 +11,6 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
-import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.animation.DecelerateInterpolator;
@@ -19,6 +18,8 @@ import android.view.animation.DecelerateInterpolator;
 import io.virtualapp.R;
 
 import static android.graphics.Canvas.ALL_SAVE_FLAG;
+
+import androidx.appcompat.widget.AppCompatImageView;
 
 public class LauncherIconView extends AppCompatImageView implements ShimmerViewBase {
     private static final int SMOOTH_ANIM_THRESHOLD = 5;

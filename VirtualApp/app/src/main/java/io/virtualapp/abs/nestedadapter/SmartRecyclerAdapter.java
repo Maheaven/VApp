@@ -1,11 +1,12 @@
 package io.virtualapp.abs.nestedadapter;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 public class SmartRecyclerAdapter extends RecyclerViewAdapterWrapper {
     public static final int TYPE_HEADER = -1;

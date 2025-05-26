@@ -1,8 +1,9 @@
 package io.virtualapp.widgets;
 
 import android.os.Bundle;
-import android.support.annotation.CallSuper;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.CallSuper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 

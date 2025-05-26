@@ -13,7 +13,7 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 
-class BaseTextView extends TextView {
+class BaseTextView extends androidx.appcompat.widget.AppCompatTextView {
     protected boolean mSingleLine = false;
     protected boolean mIncludeFontPadding = true;
     protected float mLineSpacingMult = 1;

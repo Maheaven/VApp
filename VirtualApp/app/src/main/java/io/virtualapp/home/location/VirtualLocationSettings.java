@@ -3,8 +3,6 @@ package io.virtualapp.home.location;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -26,6 +24,8 @@ import io.virtualapp.home.models.LocationData;
 import io.virtualapp.home.repo.AppRepository;
 
 import static io.virtualapp.home.location.MarkerActivity.EXTRA_LOCATION;
+
+import androidx.annotation.Nullable;
 
 public class VirtualLocationSettings extends VActivity implements AdapterView.OnItemClickListener {
     private static final int REQUSET_CODE = 1001;
